@@ -25,7 +25,7 @@
         }
 
         nav a {
-            color: #ffe5e5;
+            color: #ffffff;
             text-decoration: none;
             padding: 5px 8px;
         }
@@ -66,21 +66,36 @@
         }
 
         table {
-            background: rgba(0, 0, 0, 0.25);
             border-collapse: collapse;
             border-radius: 8px;
             overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        }
+
+        /* Tabel atas (Skill) - kuning */
+        table.table-skill {
+            background: rgba(255, 221, 0, 0.25);
+            border: 1px solid rgb(255, 221, 0) !important;
+        }
+
+        table.table-skill th {
+            background: rgba(255, 221, 0, 0.2);
+            color: #fffbcc;
+        }
+
+        /* Tabel bawah (Pendidikan) - biru */
+        table.table-pendidikan {
+            background: rgba(0, 123, 255, 0.25);
+            border: 1px solid rgb(0, 123, 255) !important;
+        }
+
+        table.table-pendidikan th {
+            background: rgba(0, 123, 255, 0.2);
+            color: #cce5ff;
         }
 
         th, td {
             border: 1px solid rgba(255, 255, 255, 0.3) !important;
             padding: 12px;
-        }
-
-        th {
-            background: rgba(255, 255, 255, 0.15);
-            color: #ffdada;
         }
 
         ul {
@@ -123,7 +138,7 @@
     </article>
 
     <div style="max-width: 600px; margin: 3em auto">
-        <table width="100%">
+        <table width="100%" class="table-skill">
             <thead>
                 <tr>
                     <th>Skill</th>
@@ -152,7 +167,7 @@
 
     <div style="max-width: 600px; margin: 3em auto; text-align: center;">
         <h2 style="color: #ffdada;">Pendidikan</h2>
-        <table width="100%">
+        <table width="100%" class="table-pendidikan">
             <thead>
                 <tr>
                     <th>No</th>
@@ -187,4 +202,3 @@
 </body>
 
 </html>
-
